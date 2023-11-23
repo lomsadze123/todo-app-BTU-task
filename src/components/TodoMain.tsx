@@ -127,12 +127,12 @@ const TodoMain = ({
                   <li
                     className={`${
                       value.check && "line-through opacity-[.5]"
-                    } md:text-xl max-w-[575px] whitespace-normal break-words`}
+                    } md:text-xl max-w-[250px] md:max-w-[450px] lg:max-w-[575px] whitespace-normal break-words`}
                   >
                     {value.val}
                   </li>
                 </div>
-                <div className="flex gap-2 md:hidden group-hover:flex group-hover:opacity-100 opacity-0 transition-opacity duration-300">
+                <div className="flex gap-2 md:hidden group-hover:flex">
                   <img
                     onClick={() => handleEdit(index)}
                     className="cursor-pointer"
