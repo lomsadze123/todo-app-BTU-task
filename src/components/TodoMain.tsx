@@ -116,7 +116,7 @@ const TodoMain = ({
                 `}
                 key={index}
               >
-                <div className="flex gap-3">
+                <div className="flex items-center gap-3">
                   <input
                     className="appearance-none border-[1px] rounded w-[26px] h-[26px] border-purple checked:bg-purple checked:after:content-['✔']
                     checked:after:text-white checked:after:ml-[6px]"
@@ -127,7 +127,7 @@ const TodoMain = ({
                   <li
                     className={`${
                       value.check && "line-through opacity-[.5]"
-                    } md:text-xl`}
+                    } md:text-xl max-w-[575px] whitespace-normal break-words`}
                   >
                     {value.val}
                   </li>
